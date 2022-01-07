@@ -1,0 +1,889 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L arisutea-pcb:Device_R R5
+U 1 1 6149D47B
+P 1950 1200
+F 0 "R5" V 1855 1200 50  0000 C CNN
+F 1 "5.1k" V 1950 1200 50  0000 C CNN
+F 2 "" V 1880 1200 50  0001 C CNN
+F 3 "" H 1950 1200 50  0001 C CNN
+	1    1950 1200
+	0    1    1    0   
+$EndComp
+$Comp
+L arisutea-pcb:Device_R R6
+U 1 1 6149DAA9
+P 1950 1800
+F 0 "R6" V 1850 1800 50  0000 C CNN
+F 1 "5.1k" V 1950 1805 50  0000 C CNN
+F 2 "" V 1880 1800 50  0001 C CNN
+F 3 "" H 1950 1800 50  0001 C CNN
+	1    1950 1800
+	0    1    1    0   
+$EndComp
+$Comp
+L arisutea-pcb:Device_Polyfuse_Small F1
+U 1 1 6149FDB6
+P 4055 2080
+F 0 "F1" V 3942 2080 50  0000 C CNN
+F 1 "Device_Polyfuse_Small" V 3941 2080 50  0001 C CNN
+F 2 "" H 4105 1880 50  0001 L CNN
+F 3 "" H 4055 2080 50  0001 C CNN
+	1    4055 2080
+	0    1    1    0   
+$EndComp
+$Comp
+L arisutea-pcb:Device_R R3
+U 1 1 614A1769
+P 4270 1575
+F 0 "R3" V 4360 1530 50  0000 L CNN
+F 1 "10k" V 4270 1505 50  0000 L CNN
+F 2 "" V 4200 1575 50  0001 C CNN
+F 3 "" H 4270 1575 50  0001 C CNN
+	1    4270 1575
+	1    0    0    -1  
+$EndComp
+$Comp
+L arisutea-pcb:Switch_SW_Push SWR1
+U 1 1 614A1EE2
+P 3920 1355
+F 0 "SWR1" H 3920 1640 50  0000 C CNN
+F 1 "Switch_SW_Push" H 3920 1549 50  0000 C CNN
+F 2 "" H 3920 1555 50  0001 C CNN
+F 3 "" H 3920 1555 50  0001 C CNN
+	1    3920 1355
+	1    0    0    -1  
+$EndComp
+$Comp
+L arisutea-pcb:ATmega32U4-AU-MCU_Microchip_ATmega U1
+U 1 1 614A274E
+P 7520 2815
+F 0 "U1" V 7375 2810 79  0000 C CNB
+F 1 "ATmega32U4-AU" V 7550 2850 79  0000 C CNB
+F 2 "arisutea:TQFP-44_10x10mm_P0.8mm" H 7520 2815 50  0001 C CNN
+F 3 "" H 7520 2815 50  0001 C CNN
+	1    7520 2815
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 614A46B1
+P 1625 900
+F 0 "#PWR?" H 1625 650 50  0001 C CNN
+F 1 "GND" V 1630 772 50  0000 R CNN
+F 2 "" H 1625 900 50  0001 C CNN
+F 3 "" H 1625 900 50  0001 C CNN
+	1    1625 900 
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1625 2000 1625 2100
+Connection ~ 1625 2100
+Wire Wire Line
+	1625 2100 1625 2170
+$Comp
+L power:GND #PWR?
+U 1 1 614A4EF6
+P 1625 2170
+F 0 "#PWR?" H 1625 1920 50  0001 C CNN
+F 1 "GND" H 1630 1997 50  0000 C CNN
+F 2 "" H 1625 2170 50  0001 C CNN
+F 3 "" H 1625 2170 50  0001 C CNN
+	1    1625 2170
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1625 1200 1800 1200
+Wire Wire Line
+	1625 1800 1800 1800
+$Comp
+L arisutea-pcb:USB_HRO-TYPE-C-31-M-12 USB1
+U 1 1 6149CCD8
+P 1475 1450
+F 0 "USB1" H 1333 2227 60  0000 C CNN
+F 1 "USB_HRO-TYPE-C-31-M-12" H 1333 2131 47  0001 C CNN
+F 2 "arisutea:USB_C_Receptacle_HRO_TYPE-C-31-M-12-HandSoldering" H 1475 1450 60  0001 C CNN
+F 3 "" H 1475 1450 60  0001 C CNN
+	1    1475 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 614A716E
+P 2100 1200
+F 0 "#PWR?" H 2100 950 50  0001 C CNN
+F 1 "GND" V 2105 1072 50  0000 R CNN
+F 2 "" H 2100 1200 50  0001 C CNN
+F 3 "" H 2100 1200 50  0001 C CNN
+	1    2100 1200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 614A73E2
+P 2100 1800
+F 0 "#PWR?" H 2100 1550 50  0001 C CNN
+F 1 "GND" V 2105 1672 50  0000 R CNN
+F 2 "" H 2100 1800 50  0001 C CNN
+F 3 "" H 2100 1800 50  0001 C CNN
+	1    2100 1800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1625 1300 1755 1300
+Wire Wire Line
+	2320 1300 2320 980 
+Wire Wire Line
+	2320 980  2620 980 
+Wire Wire Line
+	1625 1500 1755 1500
+Wire Wire Line
+	1755 1500 1755 1300
+Connection ~ 1755 1300
+Wire Wire Line
+	1755 1300 2320 1300
+Wire Wire Line
+	1625 1600 1705 1600
+Wire Wire Line
+	2325 1600 2325 1980
+Wire Wire Line
+	2325 1980 2620 1980
+Wire Wire Line
+	1625 1400 1705 1400
+Wire Wire Line
+	1705 1400 1705 1600
+Connection ~ 1705 1600
+Wire Wire Line
+	1705 1600 2325 1600
+$Comp
+L power:VCC #PWR?
+U 1 1 614A9C4B
+P 1625 1000
+F 0 "#PWR?" H 1625 850 50  0001 C CNN
+F 1 "VCC" V 1640 1128 50  0000 L CNN
+F 2 "" H 1625 1000 50  0001 C CNN
+F 3 "" H 1625 1000 50  0001 C CNN
+	1    1625 1000
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 614A9EDC
+P 1625 1900
+F 0 "#PWR?" H 1625 1750 50  0001 C CNN
+F 1 "VCC" V 1640 2028 50  0000 L CNN
+F 2 "" H 1625 1900 50  0001 C CNN
+F 3 "" H 1625 1900 50  0001 C CNN
+	1    1625 1900
+	0    1    1    0   
+$EndComp
+NoConn ~ 1625 1700
+NoConn ~ 1625 1100
+$Comp
+L power:GND #PWR?
+U 1 1 614AA7C4
+P 2220 1480
+F 0 "#PWR?" H 2220 1230 50  0001 C CNN
+F 1 "GND" V 2225 1352 50  0000 R CNN
+F 2 "" H 2220 1480 50  0001 C CNN
+F 3 "" H 2220 1480 50  0001 C CNN
+	1    2220 1480
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 614AA8DE
+P 3220 1480
+F 0 "#PWR?" H 3220 1330 50  0001 C CNN
+F 1 "VCC" V 3235 1608 50  0000 L CNN
+F 2 "" H 3220 1480 50  0001 C CNN
+F 3 "" H 3220 1480 50  0001 C CNN
+	1    3220 1480
+	0    1    1    0   
+$EndComp
+$Comp
+L arisutea-pcb:Device_R R2
+U 1 1 614AB760
+P 3085 955
+F 0 "R2" V 3165 955 50  0000 C CNN
+F 1 "22" V 3085 955 50  0000 C CNN
+F 2 "" V 3015 955 50  0001 C CNN
+F 3 "" H 3085 955 50  0001 C CNN
+	1    3085 955 
+	0    1    1    0   
+$EndComp
+$Comp
+L arisutea-pcb:USBLC6-2SC6-Power_Protection U1
+U 1 1 6149EADA
+P 2720 1480
+F 0 "U1" V 2465 1810 50  0000 L CNN
+F 1 "USBLC6" V 2535 1805 50  0000 L CNN
+F 2 "arisutea:SOT-23-6_Handsoldering" H 1970 1880 50  0001 C CNN
+F 3 "" H 2920 1830 50  0001 C CNN
+	1    2720 1480
+	0    1    1    0   
+$EndComp
+$Comp
+L arisutea-pcb:Device_R R1
+U 1 1 614ACD84
+P 3085 1990
+F 0 "R1" V 2990 1990 50  0000 C CNN
+F 1 "22" V 3085 1990 50  0000 C CNN
+F 2 "" V 3015 1990 50  0001 C CNN
+F 3 "" H 3085 1990 50  0001 C CNN
+	1    3085 1990
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2820 1980 2820 1990
+Wire Wire Line
+	2820 1990 2935 1990
+Wire Wire Line
+	2820 980  2820 955 
+Wire Wire Line
+	2820 955  2935 955 
+Connection ~ 2820 955 
+Text GLabel 2935 800  2    50   Input ~ 0
+USB-
+Wire Wire Line
+	2820 2120 2940 2120
+Wire Wire Line
+	2820 1990 2820 2120
+Connection ~ 2820 1990
+Text GLabel 2940 2120 2    50   Input ~ 0
+USB+
+Wire Wire Line
+	2820 800  2935 800 
+Wire Wire Line
+	2820 800  2820 955 
+Text GLabel 3235 955  2    50   Input ~ 0
+D-
+Text GLabel 3235 1990 2    50   Input ~ 0
+D+
+$Comp
+L power:+5V #PWR?
+U 1 1 614B2076
+P 4270 1725
+F 0 "#PWR?" H 4270 1575 50  0001 C CNN
+F 1 "+5V" H 4285 1898 50  0000 C CNN
+F 2 "" H 4270 1725 50  0001 C CNN
+F 3 "" H 4270 1725 50  0001 C CNN
+	1    4270 1725
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4120 1355 4270 1355
+Text GLabel 4470 1355 2    50   Input ~ 0
+RESET
+Wire Wire Line
+	4270 1425 4270 1355
+Connection ~ 4270 1355
+Wire Wire Line
+	4270 1355 4470 1355
+$Comp
+L power:GND #PWR?
+U 1 1 614B2FAA
+P 3720 1355
+F 0 "#PWR?" H 3720 1105 50  0001 C CNN
+F 1 "GND" V 3725 1227 50  0000 R CNN
+F 2 "" H 3720 1355 50  0001 C CNN
+F 3 "" H 3720 1355 50  0001 C CNN
+	1    3720 1355
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 614B74F6
+P 3955 2080
+F 0 "#PWR?" H 3955 1930 50  0001 C CNN
+F 1 "VCC" V 3970 2207 50  0000 L CNN
+F 2 "" H 3955 2080 50  0001 C CNN
+F 3 "" H 3955 2080 50  0001 C CNN
+	1    3955 2080
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 614B77FA
+P 4155 2080
+F 0 "#PWR?" H 4155 1930 50  0001 C CNN
+F 1 "+5V" V 4170 2208 50  0000 L CNN
+F 2 "" H 4155 2080 50  0001 C CNN
+F 3 "" H 4155 2080 50  0001 C CNN
+	1    4155 2080
+	0    1    1    0   
+$EndComp
+$Comp
+L arisutea-pcb:Connector_Generic_Conn_01x01 J7
+U 1 1 614BBF80
+P 1475 2945
+F 0 "J7" H 1555 2987 50  0000 L CNN
+F 1 "VCC" H 1555 2896 50  0000 L CNN
+F 2 "arisutea:PinHeader_1x01_P2.54mm_Vertical" H 1475 2945 50  0001 C CNN
+F 3 "" H 1475 2945 50  0001 C CNN
+	1    1475 2945
+	1    0    0    -1  
+$EndComp
+$Comp
+L arisutea-pcb:Connector_Generic_Conn_01x01 J8
+U 1 1 614BC9F3
+P 1475 3100
+F 0 "J8" H 1555 3142 50  0000 L CNN
+F 1 "D-" H 1555 3051 50  0000 L CNN
+F 2 "arisutea:PinHeader_1x01_P2.54mm_Vertical" H 1475 3100 50  0001 C CNN
+F 3 "" H 1475 3100 50  0001 C CNN
+	1    1475 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L arisutea-pcb:Connector_Generic_Conn_01x01 J9
+U 1 1 614BD2E4
+P 1475 3260
+F 0 "J9" H 1555 3302 50  0000 L CNN
+F 1 "D+" H 1555 3211 50  0000 L CNN
+F 2 "arisutea:PinHeader_1x01_P2.54mm_Vertical" H 1475 3260 50  0001 C CNN
+F 3 "" H 1475 3260 50  0001 C CNN
+	1    1475 3260
+	1    0    0    -1  
+$EndComp
+$Comp
+L arisutea-pcb:Connector_Generic_Conn_01x01 J10
+U 1 1 614BD2EE
+P 1475 3415
+F 0 "J10" H 1555 3457 50  0000 L CNN
+F 1 "GND" H 1555 3366 50  0000 L CNN
+F 2 "arisutea:PinHeader_1x01_P2.54mm_Vertical" H 1475 3415 50  0001 C CNN
+F 3 "" H 1475 3415 50  0001 C CNN
+	1    1475 3415
+	1    0    0    -1  
+$EndComp
+$Comp
+L arisutea-pcb:Connector_Generic_Conn_01x01 J1
+U 1 1 614C9BA7
+P 2835 2790
+F 0 "J1" H 2915 2832 50  0000 L CNN
+F 1 "MISO" H 2915 2741 50  0000 L CNN
+F 2 "arisutea:PinHeader_1x01_P2.54mm_Vertical" H 2835 2790 50  0001 C CNN
+F 3 "" H 2835 2790 50  0001 C CNN
+	1    2835 2790
+	1    0    0    -1  
+$EndComp
+$Comp
+L arisutea-pcb:Connector_Generic_Conn_01x01 J2
+U 1 1 614C9BB1
+P 2835 2945
+F 0 "J2" H 2915 2987 50  0000 L CNN
+F 1 "+5V" H 2915 2896 50  0000 L CNN
+F 2 "arisutea:PinHeader_1x01_P2.54mm_Vertical" H 2835 2945 50  0001 C CNN
+F 3 "" H 2835 2945 50  0001 C CNN
+	1    2835 2945
+	1    0    0    -1  
+$EndComp
+$Comp
+L arisutea-pcb:Connector_Generic_Conn_01x01 J3
+U 1 1 614C9BBB
+P 2835 3105
+F 0 "J3" H 2915 3147 50  0000 L CNN
+F 1 "SCLK" H 2915 3056 50  0000 L CNN
+F 2 "arisutea:PinHeader_1x01_P2.54mm_Vertical" H 2835 3105 50  0001 C CNN
+F 3 "" H 2835 3105 50  0001 C CNN
+	1    2835 3105
+	1    0    0    -1  
+$EndComp
+$Comp
+L arisutea-pcb:Connector_Generic_Conn_01x01 J4
+U 1 1 614C9BC5
+P 2835 3260
+F 0 "J4" H 2915 3302 50  0000 L CNN
+F 1 "MOSI" H 2915 3211 50  0000 L CNN
+F 2 "arisutea:PinHeader_1x01_P2.54mm_Vertical" H 2835 3260 50  0001 C CNN
+F 3 "" H 2835 3260 50  0001 C CNN
+	1    2835 3260
+	1    0    0    -1  
+$EndComp
+$Comp
+L arisutea-pcb:Connector_Generic_Conn_01x01 J5
+U 1 1 614CB1A3
+P 2835 3415
+F 0 "J5" H 2915 3457 50  0000 L CNN
+F 1 "RES" H 2915 3366 50  0000 L CNN
+F 2 "arisutea:PinHeader_1x01_P2.54mm_Vertical" H 2835 3415 50  0001 C CNN
+F 3 "" H 2835 3415 50  0001 C CNN
+	1    2835 3415
+	1    0    0    -1  
+$EndComp
+$Comp
+L arisutea-pcb:Connector_Generic_Conn_01x01 J6
+U 1 1 614CB1AD
+P 2835 3570
+F 0 "J6" H 2915 3612 50  0000 L CNN
+F 1 "GND" H 2915 3521 50  0000 L CNN
+F 2 "arisutea:PinHeader_1x01_P2.54mm_Vertical" H 2835 3570 50  0001 C CNN
+F 3 "" H 2835 3570 50  0001 C CNN
+	1    2835 3570
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 614CD215
+P 1275 2945
+F 0 "#PWR?" H 1275 2795 50  0001 C CNN
+F 1 "VCC" V 1290 3072 50  0000 L CNN
+F 2 "" H 1275 2945 50  0001 C CNN
+F 3 "" H 1275 2945 50  0001 C CNN
+	1    1275 2945
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 614CE213
+P 1275 3415
+F 0 "#PWR?" H 1275 3165 50  0001 C CNN
+F 1 "GND" V 1280 3287 50  0000 R CNN
+F 2 "" H 1275 3415 50  0001 C CNN
+F 3 "" H 1275 3415 50  0001 C CNN
+	1    1275 3415
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 614CE575
+P 2635 3570
+F 0 "#PWR?" H 2635 3320 50  0001 C CNN
+F 1 "GND" V 2640 3442 50  0000 R CNN
+F 2 "" H 2635 3570 50  0001 C CNN
+F 3 "" H 2635 3570 50  0001 C CNN
+	1    2635 3570
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 614CE909
+P 2635 2945
+F 0 "#PWR?" H 2635 2795 50  0001 C CNN
+F 1 "+5V" V 2650 3073 50  0000 L CNN
+F 2 "" H 2635 2945 50  0001 C CNN
+F 3 "" H 2635 2945 50  0001 C CNN
+	1    2635 2945
+	0    -1   -1   0   
+$EndComp
+Text GLabel 1275 3100 0    50   Input ~ 0
+USB-
+Text GLabel 1275 3260 0    50   Input ~ 0
+USB+
+Text GLabel 2635 2790 0    50   Input ~ 0
+MISO
+Text GLabel 2635 3105 0    50   Input ~ 0
+SCLK
+Text GLabel 2635 3260 0    50   Input ~ 0
+MOSI
+Text GLabel 2635 3415 0    50   Input ~ 0
+RESET
+Text GLabel 5920 1815 0    50   Input ~ 0
+RESET
+Wire Wire Line
+	8520 1215 8520 795 
+$Comp
+L power:+5V #PWR?
+U 1 1 614D3ACD
+P 8520 720
+F 0 "#PWR?" H 8520 570 50  0001 C CNN
+F 1 "+5V" H 8535 893 50  0000 C CNN
+F 2 "" H 8520 720 50  0001 C CNN
+F 3 "" H 8520 720 50  0001 C CNN
+	1    8520 720 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8520 795  8440 795 
+Connection ~ 8520 795 
+Wire Wire Line
+	8520 795  8520 720 
+$Comp
+L arisutea-pcb:Device_C C5
+U 1 1 614D4484
+P 8290 795
+F 0 "C5" V 8038 795 50  0000 C CNN
+F 1 "1uF" V 8129 795 50  0000 C CNN
+F 2 "" H 8328 645 50  0001 C CNN
+F 3 "" H 8290 795 50  0001 C CNN
+	1    8290 795 
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 614D4CFD
+P 8140 795
+F 0 "#PWR?" H 8140 545 50  0001 C CNN
+F 1 "GND" V 8145 667 50  0000 R CNN
+F 2 "" H 8140 795 50  0001 C CNN
+F 3 "" H 8140 795 50  0001 C CNN
+	1    8140 795 
+	0    1    1    0   
+$EndComp
+Text GLabel 8270 1215 1    50   Input ~ 0
+D-
+Text GLabel 8020 1215 1    50   Input ~ 0
+D+
+$Comp
+L power:GND #PWR?
+U 1 1 614D6132
+P 7770 1215
+F 0 "#PWR?" H 7770 965 50  0001 C CNN
+F 1 "GND" H 7775 1042 50  0000 C CNN
+F 2 "" H 7770 1215 50  0001 C CNN
+F 3 "" H 7770 1215 50  0001 C CNN
+	1    7770 1215
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 614D723D
+P 9120 3815
+F 0 "#PWR?" H 9120 3565 50  0001 C CNN
+F 1 "GND" V 9125 3687 50  0000 R CNN
+F 2 "" H 9120 3815 50  0001 C CNN
+F 3 "" H 9120 3815 50  0001 C CNN
+	1    9120 3815
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 614D7738
+P 9120 1815
+F 0 "#PWR?" H 9120 1565 50  0001 C CNN
+F 1 "GND" V 9125 1687 50  0000 R CNN
+F 2 "" H 9120 1815 50  0001 C CNN
+F 3 "" H 9120 1815 50  0001 C CNN
+	1    9120 1815
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7520 1215 7520 1150
+$Comp
+L arisutea-pcb:Device_C C4
+U 1 1 614D83CF
+P 7520 1000
+F 0 "C4" H 7405 915 50  0000 L CNN
+F 1 "1uF (±10%)" V 7645 795 50  0000 L CNN
+F 2 "" H 7558 850 50  0001 C CNN
+F 3 "" H 7520 1000 50  0001 C CNN
+	1    7520 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 614D8DD8
+P 7520 850
+F 0 "#PWR?" H 7520 600 50  0001 C CNN
+F 1 "GND" H 7525 677 50  0000 C CNN
+F 2 "" H 7520 850 50  0001 C CNN
+F 3 "" H 7520 850 50  0001 C CNN
+	1    7520 850 
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7270 1215 7270 810 
+$Comp
+L power:+5V #PWR?
+U 1 1 614D9E66
+P 7270 750
+F 0 "#PWR?" H 7270 600 50  0001 C CNN
+F 1 "+5V" H 7285 923 50  0000 C CNN
+F 2 "" H 7270 750 50  0001 C CNN
+F 3 "" H 7270 750 50  0001 C CNN
+	1    7270 750 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7270 810  7135 810 
+Connection ~ 7270 810 
+Wire Wire Line
+	7270 810  7270 750 
+$Comp
+L arisutea-pcb:Device_C C3
+U 1 1 614DADCA
+P 6985 810
+F 0 "C3" V 6733 810 50  0000 C CNN
+F 1 "10uF" V 6824 810 50  0000 C CNN
+F 2 "" H 7023 660 50  0001 C CNN
+F 3 "" H 6985 810 50  0001 C CNN
+	1    6985 810 
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 614DBCCF
+P 6835 810
+F 0 "#PWR?" H 6835 560 50  0001 C CNN
+F 1 "GND" V 6840 682 50  0000 R CNN
+F 2 "" H 6835 810 50  0001 C CNN
+F 3 "" H 6835 810 50  0001 C CNN
+	1    6835 810 
+	0    1    1    0   
+$EndComp
+Text GLabel 6770 1215 1    50   Input ~ 0
+SCLK
+Text GLabel 6520 1215 1    50   Input ~ 0
+MOSI
+Text GLabel 6270 1215 1    50   Input ~ 0
+MISO
+$Comp
+L power:+5V #PWR?
+U 1 1 614DD484
+P 5145 2065
+F 0 "#PWR?" H 5145 1915 50  0001 C CNN
+F 1 "+5V" V 5160 2193 50  0000 L CNN
+F 2 "" H 5145 2065 50  0001 C CNN
+F 3 "" H 5145 2065 50  0001 C CNN
+	1    5145 2065
+	0    -1   -1   0   
+$EndComp
+$Comp
+L arisutea-pcb:Device_C C6
+U 1 1 614DDCCC
+P 5410 2315
+F 0 "C6" V 5158 2315 50  0000 C CNN
+F 1 "0.1uF" V 5249 2315 50  0000 C CNN
+F 2 "" H 5448 2165 50  0001 C CNN
+F 3 "" H 5410 2315 50  0001 C CNN
+	1    5410 2315
+	0    1    1    0   
+$EndComp
+$Comp
+L arisutea-pcb:Device_C C8
+U 1 1 614DE568
+P 5410 2705
+F 0 "C8" V 5158 2705 50  0000 C CNN
+F 1 "0.1uF" V 5249 2705 50  0000 C CNN
+F 2 "" H 5448 2555 50  0001 C CNN
+F 3 "" H 5410 2705 50  0001 C CNN
+	1    5410 2705
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5145 2065 5260 2065
+Connection ~ 5260 2065
+Wire Wire Line
+	5260 2065 5920 2065
+Wire Wire Line
+	5560 2705 5560 2315
+Wire Wire Line
+	5560 2315 5920 2315
+Connection ~ 5560 2315
+Wire Wire Line
+	5260 2065 5260 2705
+Wire Wire Line
+	5560 2705 5560 2790
+Connection ~ 5560 2705
+$Comp
+L power:GND #PWR?
+U 1 1 614E33A9
+P 5560 2790
+F 0 "#PWR?" H 5560 2540 50  0001 C CNN
+F 1 "GND" H 5565 2617 50  0000 C CNN
+F 2 "" H 5560 2790 50  0001 C CNN
+F 3 "" H 5560 2790 50  0001 C CNN
+	1    5560 2790
+	1    0    0    -1  
+$EndComp
+$Comp
+L arisutea-pcb:Device_Crystal_GND24 Y1
+U 1 1 614E3809
+P 4020 3125
+F 0 "Y1" H 4214 3171 50  0000 L CNN
+F 1 "16MHz" H 4214 3080 50  0000 L CNN
+F 2 "arisutea:Crystal_SMD_TXC_7M-4Pin_3.2x2.5mm_HandSoldering" H 4020 3125 50  0001 C CNN
+F 3 "" H 4020 3125 50  0001 C CNN
+	1    4020 3125
+	1    0    0    -1  
+$EndComp
+Text GLabel 3720 2870 1    50   Input ~ 0
+XTAL1
+Text GLabel 4320 2880 1    50   Input ~ 0
+XTAL2
+Wire Wire Line
+	4020 2925 3810 2925
+Wire Wire Line
+	3810 2925 3810 3325
+Wire Wire Line
+	3810 3325 4020 3325
+Connection ~ 4020 3325
+$Comp
+L power:GND #PWR?
+U 1 1 614E8CFE
+P 4020 3660
+F 0 "#PWR?" H 4020 3410 50  0001 C CNN
+F 1 "GND" H 4025 3487 50  0000 C CNN
+F 2 "" H 4020 3660 50  0001 C CNN
+F 3 "" H 4020 3660 50  0001 C CNN
+	1    4020 3660
+	1    0    0    -1  
+$EndComp
+$Comp
+L arisutea-pcb:Device_C C1
+U 1 1 614E9193
+P 3870 3660
+F 0 "C1" V 4122 3660 50  0000 C CNN
+F 1 "22pF" V 4031 3660 50  0000 C CNN
+F 2 "" H 3908 3510 50  0001 C CNN
+F 3 "" H 3870 3660 50  0001 C CNN
+	1    3870 3660
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4020 3325 4020 3660
+Connection ~ 4020 3660
+$Comp
+L arisutea-pcb:Device_C C2
+U 1 1 614EDF88
+P 4170 3660
+F 0 "C2" V 3918 3660 50  0000 C CNN
+F 1 "22pF" V 4009 3660 50  0000 C CNN
+F 2 "" H 4208 3510 50  0001 C CNN
+F 3 "" H 4170 3660 50  0001 C CNN
+	1    4170 3660
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4320 2880 4320 3125
+Connection ~ 4320 3125
+Wire Wire Line
+	4320 3125 4320 3660
+Wire Wire Line
+	4170 3125 4320 3125
+Wire Wire Line
+	3720 2870 3720 3125
+Wire Wire Line
+	3870 3125 3720 3125
+Connection ~ 3720 3125
+Wire Wire Line
+	3720 3125 3720 3660
+Text GLabel 5920 2565 0    50   Input ~ 0
+XTAL2
+Text GLabel 5920 2815 0    50   Input ~ 0
+XTAL1
+$Comp
+L arisutea-pcb:Device_C C9
+U 1 1 614F79EC
+P 5860 4735
+F 0 "C9" H 5975 4781 50  0000 L CNN
+F 1 "0.1uF" H 5975 4690 50  0000 L CNN
+F 2 "" H 5898 4585 50  0001 C CNN
+F 3 "" H 5860 4735 50  0001 C CNN
+	1    5860 4735
+	1    0    0    -1  
+$EndComp
+$Comp
+L arisutea-pcb:Device_C C7
+U 1 1 614F8126
+P 6270 4735
+F 0 "C7" H 6385 4781 50  0000 L CNN
+F 1 "0.1uF" H 6385 4690 50  0000 L CNN
+F 2 "" H 6308 4585 50  0001 C CNN
+F 3 "" H 6270 4735 50  0001 C CNN
+	1    6270 4735
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6270 4415 6270 4585
+Wire Wire Line
+	6270 4585 5860 4585
+Connection ~ 6270 4585
+Connection ~ 5860 4585
+Wire Wire Line
+	5860 4585 5630 4585
+$Comp
+L power:GND #PWR?
+U 1 1 614FCB1F
+P 5630 4585
+F 0 "#PWR?" H 5630 4335 50  0001 C CNN
+F 1 "GND" V 5635 4457 50  0000 R CNN
+F 2 "" H 5630 4585 50  0001 C CNN
+F 3 "" H 5630 4585 50  0001 C CNN
+	1    5630 4585
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5860 4885 6270 4885
+Wire Wire Line
+	6520 4885 6520 4415
+Connection ~ 6270 4885
+Wire Wire Line
+	6270 4885 6520 4885
+Wire Wire Line
+	6520 4885 6520 4935
+Connection ~ 6520 4885
+$Comp
+L power:+5V #PWR?
+U 1 1 614FF5C4
+P 6520 4935
+F 0 "#PWR?" H 6520 4785 50  0001 C CNN
+F 1 "+5V" H 6535 5108 50  0000 C CNN
+F 2 "" H 6520 4935 50  0001 C CNN
+F 3 "" H 6520 4935 50  0001 C CNN
+	1    6520 4935
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8770 4415 8770 4545
+$Comp
+L arisutea-pcb:Device_R R4
+U 1 1 61500B31
+P 8770 4695
+F 0 "R4" H 8820 4700 50  0000 L CNN
+F 1 "10k" V 8770 4630 50  0000 L CNN
+F 2 "" V 8700 4695 50  0001 C CNN
+F 3 "" H 8770 4695 50  0001 C CNN
+	1    8770 4695
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 615018E8
+P 8770 4845
+F 0 "#PWR?" H 8770 4595 50  0001 C CNN
+F 1 "GND" H 8775 4672 50  0000 C CNN
+F 2 "" H 8770 4845 50  0001 C CNN
+F 3 "" H 8770 4845 50  0001 C CNN
+	1    8770 4845
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 61501E09
+P 9120 4065
+F 0 "#PWR?" H 9120 3915 50  0001 C CNN
+F 1 "+5V" V 9135 4193 50  0000 L CNN
+F 2 "" H 9120 4065 50  0001 C CNN
+F 3 "" H 9120 4065 50  0001 C CNN
+	1    9120 4065
+	0    1    1    0   
+$EndComp
+NoConn ~ 9120 2065
+$Comp
+L power:+5V #PWR?
+U 1 1 6150338E
+P 9120 1565
+F 0 "#PWR?" H 9120 1415 50  0001 C CNN
+F 1 "+5V" V 9135 1693 50  0000 L CNN
+F 2 "" H 9120 1565 50  0001 C CNN
+F 3 "" H 9120 1565 50  0001 C CNN
+	1    9120 1565
+	0    1    1    0   
+$EndComp
+$EndSCHEMATC
